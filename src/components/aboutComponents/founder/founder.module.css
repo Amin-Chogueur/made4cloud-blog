@@ -1,0 +1,36 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.imageContainer {
+  flex: 0.8;
+}
+.imageContainer img {
+  margin-right: auto;
+}
+.content {
+  flex: 1.2;
+}
+.content h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: var(--main);
+  font-weight: 600;
+}
+.content p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #222;
+}
+.content span {
+  border-bottom: 4px solid red;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

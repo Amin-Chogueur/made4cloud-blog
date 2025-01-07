@@ -1,0 +1,42 @@
+.paginationContainer {
+  width: fit-content;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 3px 5px var(--btn);
+}
+.indexPagesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.indexPagesContainer button {
+  background-color: white;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.indexPagesContainer button:disabled {
+  display: none;
+}
+.indexPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  width: 30px;
+  font-weight: 600;
+}
+.indexCurrentPage {
+  color: white;
+  background-color: var(--btn);
+  font-weight: 700;
+}

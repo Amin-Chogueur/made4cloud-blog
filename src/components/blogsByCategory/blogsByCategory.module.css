@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.slugContainer h1 {
+  color: #222;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  background-color: var(--btn);
+  padding: 20px;
+}
+.slugContainer span {
+  color: gray;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+}
+
+.allBlogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.allBlogs .blogTitle {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  margin: auto;
+}
+
+.blog {
+  height: 490px;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+.blog .category {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  padding: 5px;
+  color: #222;
+  width: 100%;
+  text-align: center;
+}
+
+.blog .description {
+  width: 100%;
+  font-size: 14px;
+  padding: 0 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  text-transform: capitalize;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.imageContainer::after {
+  position: absolute;
+  content: "made4cloud.com";
+  top: 10px;
+  right: 10px;
+  color: var(--main);
+  font-size: 12px;
+  font-weight: 500px;
+  z-index: 60;
+}
+
+.titleOverLay {
+  position: absolute;
+  top: 70px;
+  z-index: 30;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--main);
+  font-weight: 900;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  max-width: 80%;
+  overflow-wrap: break-word;
+}
+
+.blog .category {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  padding: 5px;
+  color: #222;
+  width: 100%;
+  text-align: center;
+}
+
+.blog h3 {
+  color: var(--main);
+  text-align: center;
+  padding: 0 5px;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.blog span {
+  color: gray;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+}
+
+.readAllLink {
+  font-size: 12px;
+  color: var(--btn);
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .titleOverLay {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .slugContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+  .titleOverLay {
+    font-size: 20px;
+  }
+}
